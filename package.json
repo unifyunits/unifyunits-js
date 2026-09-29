@@ -1,0 +1,14 @@
+{
+  "name": "@unifyunits/sdk",
+  "version": "0.1.0",
+  "description": "JavaScript and TypeScript client for the UnifyUnits Measurement API",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=18" },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": { "build": "tsc -p tsconfig.json", "test": "vitest run", "check": "npm run build && npm test" },
+  "devDependencies": { "typescript": "^5.9.2", "vitest": "^4.1.11" }
+}
