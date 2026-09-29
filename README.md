@@ -4,11 +4,17 @@ JavaScript and TypeScript client for the hosted UnifyUnits Measurement API.
 Conversions use decimal strings to preserve precision. The SDK does not bundle
 conversion factors or private measurement data.
 
-## Install
+## Requirements and install
+
+Node.js 18 or newer is required. Install the first release directly from
+GitHub:
 
 ```sh
-npm install @unifyunits/sdk
+npm install github:unifyunits/unifyunits-js#v0.1.0
 ```
+
+The GitHub install builds the TypeScript package during installation. After
+publication to npm, install it with `npm install @unifyunits/sdk` instead.
 
 ## Usage
 
@@ -35,4 +41,6 @@ npm install
 npm run check
 ```
 
-Package publication is a separate step.
+Tests use a mocked Fetch implementation and do not require a live API key.
+GitHub releases and npm publication are separate; this repository does not
+publish automatically to npm.
